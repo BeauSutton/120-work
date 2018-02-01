@@ -13,4 +13,4 @@ Beau sutton
 3. Of course I had a few problems but they were less from a lack of understanding but instead more from lack of practice with Atom and Github. Thus, as I followed the website it gave the practice i need to become better at using Atom and GitHub.
 4. I do find Atom as well as other text editors interesting. At first, it was confusing but as I used it become much easier to use.
 5. I get emails whenever someone posts an issue. But since I, myself, am not competent with this system yet, my input wouldn't add anything substantial to the discussions.
-![Image of my editor](screenshot-hw-2)
+![Image of my editor](screenshot-hw-2.jpg)
