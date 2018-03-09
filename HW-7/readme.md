@@ -9,43 +9,78 @@ Your Name, Your Section Number
 
 // creating the variables for the ball
 let ball = {};
+
 ball.width = 40;
+
 ball.x = 10;
+
 ball.y = 10;
+
 ball.delta_x = 1;
+
 ball.delta_y = 1;
+
 ball.scale_x = 1;
+
 ball.scale_y = 1;
+
 // setting up the code
+
 function setup() {
+
     createCanvas(windowWidth, 400);
+
     background(255);
+
 }
 
 // stating that 10 = 1*1 for both ball.x and ball.y
+
 function draw() {
+
     ball.x += ball.delta_x * ball.scale_x;
+
     ball.y += ball.delta_y * ball.scale_y;
 
+
 // setting up if then statement
+
     if (ball.x >= width || ball.x <= 0) {
+
 // If ball.x is greater than width or ball.x is less than 0
+
         ball.delta_x = -1 * ball.delta_x;
+
 // ball.delta_x will equal -1 * 1        
+
     }
+
     if (ball.y >= height || ball.y <= 0) {
+
 // If ball.y is greater than width or ball.y is less than 0
+
         ball.delta_y = -1 * ball.delta_y;
+
 // ball.delta_y will equal -1 * 1     
+
     }
+
 // ball will be white
+
     fill(255);
+
     ellipse(ball.x, ball.y, ball.width, ball.width);
+
 }
+
 // when the mouse is pressed the ball speeds up and changes direction
+
 function mousePressed() {
+
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
+
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
+    
 }
 
 ## How the ball changes direction
