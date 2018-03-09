@@ -1,6 +1,6 @@
 Your Name, Your Section Number
 
-[Live Sketch Link](Your Live Link)
+[Live Sketch Link](https://beausutton.github.io/120-work/HW-7/)
 
 
 # HW 7 | Describe then Alter the Bouncing Ball
@@ -80,7 +80,7 @@ function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
 
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
-    
+
 }
 
 ## How the ball changes direction
