@@ -1,4 +1,4 @@
-Your Name, Your Section Number
+Beau Sutton, 50
 
 [Live Sketch Link](https://beausutton.github.io/120-work/HW-7/)
 
