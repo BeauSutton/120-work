@@ -7,7 +7,7 @@ Your Name, Your Section Number
 
 ## Description of What the Original Code is Doing
 
-// creating the variables for the ball
+(// creating the variables for the ball
 let ball = {};
 ball.width = 40;
 ball.x = 10;
@@ -46,7 +46,7 @@ function draw() {
 function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
-}
+})
 
 ## How the ball changes direction
 
