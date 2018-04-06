@@ -29,6 +29,8 @@ function draw() {
         green_val = green_val % 210;
 
         drawDot();
+        drawRect();
+
 //trying to make two different dots go across the screen but
 //cant seem to get it right
 push();
@@ -55,17 +57,22 @@ push();
   pos_x = pos_x % windowWidth;
     pos_y = pos_y % windowHeight;
 
+//two simple functions that just draw two shapes and spin them around
 function drawDot() {
 
-  fill('white');
+  fill(random(0,255),random(0,255),200);
   noStroke();
-  ellipse(50,50,50,50)
-
-
-
-
-
+  ellipse(random(windowWidth),random(windowHeight),50,50)
 }
+function drawRect() {
+push();
+  fill(random(0,255),random(0,255),200);
+  noStroke();
+  rect(random(windowWidth),random(windowHeight),50,50)
+  translate(random(0,50),random(0,50));
+pop();
+}
+
 
 pop();
 
@@ -121,11 +128,12 @@ push();
 pop();
 
 push();
-    textSize(20);
+//wanted to make a random word "generator" like in one of the examples
+     textSize(20);
     fill('black');
-    text("Array: " + idx, 10, 120);
-    text("Array_2: " + stringArray[idx], 10, 160);
-    idx =(idx+1)% stringArray.length;
+    text("Array:"+idx,10,120);
+    text("Array_2:"+stringArray[idx],10,160);
+    idx =(idx+1)%stringArray.length;
 pop();
 
 
